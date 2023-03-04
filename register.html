@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Веб-технологии</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html"><img src="images/logo_new_small_rus.png" alt="логотип"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">О себе</a>
+                </li>
+                <li>
+                    <a href="resume.html">Резюме</a>
+                </li>
+                <li>
+                    <a href="register.html">Записаться на аттестацию</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Запись на аттестацию</h1>
+            <form action="" method="get">
+                <div>
+                    <div>
+                        <label for="userName">Имя
+                            <input type="text" name="userName" id="userName"></input>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="secondName">Фамилия
+                            <input type="text" name="secondName" id="secondName"></input>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="login">Логин
+                            <input type="text" name="login" id="login"></input>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pass">Пароль
+                            <input type="password" name="pass" id="pass"></input>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="subject">Выбор предмета</label>
+                        <select id="subject">
+                            <option value="1">Математика</option>
+                            <option value="2">Литература</option>
+                            <option value="3">Физика</option>
+                            <option value="4">Информатика</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Выберите время</p>
+                        <div>
+                            <input type="radio" name="time" value="1" id="time1" checked>
+                            <label for="time1">09.00 - 10.00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="time" value="2" id="time2">
+                            <label for="time2">10.00 - 11.00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="time" value="3" id="time3">
+                            <label for="time3">19.00 - 20.00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="time" value="4" id="time4">
+                            <label for="time4">20.00 - 21.00</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Выберите форму контроля</p>
+                    <div>
+                        <input type="checkbox" name="controlType" value="1" id="controlType1">
+                        <label for="controlType1">тест</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="controlType" value="2" id="controlType2">
+                        <label for="controlType2">собеседование</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="controlType" value="3" id="controlType3">
+                        <label for="controlType3">доклад</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="controlType" value="4" id="controlType4">
+                        <label for="controlType4">контрольная работа</label>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <p><label for="additionInfo">Дополнительная информация</label></p>
+                    <textarea cols="30" name="additionInfo" id="additionInfo"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Отправить">
+                </div>
+Форма контроля (с помощью checkbox: тест, собеседование, доклад, контрольная работа)
+Кнопка для отправки данных.
+        </form>
+        </main>
+        <footer>
+            <div>Сайт разработан Иван Дроботов, Copyright © 2023</div>
+            <div>
+                <a href="#"><img src="images/vk.png" alt="VK"></a>
+                <a href="#"><img src="images/inst.png" alt="Instagram"></a>
+                <a href="#"><img src="images/github.png" alt="Github"></a>
+            </div>
+        </footer>
+    </header>
+</body>
+</html>
