@@ -2,17 +2,21 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Резюме</title>
 </head>
 <body>
     <header>
+        <div class="top-header">
+            <a class="header-logo" href="index.html"><img src="images/internet.jpg" alt="логотип"></a>
+            <p class="top-header-text">
+                Программные технологии Интернета
+            </p>
+        </div>
         <nav>
-            <div>
-                <a href="index.html"><img src="images/logo_new_small_rus.png" alt="логотип"></a>
-            </div>
-            <ul>
+            <ul class="nav-menu">
                 <li>
-                    <a href="index.html">О себе</a>
+                    <a href="index.html"><span>О себе</span></a>
                 </li>
                 <li>
                     <a href="resume.html">Резюме</a>
@@ -22,10 +26,9 @@
                 </li>
             </ul>
         </nav>
+    </header>
         <main>
-            <h1>Резюме</h1>
-            <table border="1" cellpadding="5">
-                <caption>Опыт работы</caption>
+            <table cellpadding="5">
                 <tr>
                     <td>год</td>
                     <td>место работы (учёбы), должность</td>
@@ -80,13 +83,12 @@
             </table>
         </main>
         <footer>
-            <div>Сайт разработан Иван Дроботов, Copyright © 2023</div>
+            <div class="footer-text">Сайт разработан Иван Дроботов, Copyright © 2023</div>
             <div>
+                <a href="#"><img src="images/ok.png" alt="Odnoklassniki"></a>
+                <a href="#"><img src="images/tg.png" alt="Telegram"></a>
                 <a href="#"><img src="images/vk.png" alt="VK"></a>
-                <a href="#"><img src="images/inst.png" alt="Instagram"></a>
-                <a href="#"><img src="images/github.png" alt="Github"></a>
             </div>
         </footer>
-    </header>
 </body>
 </html>
