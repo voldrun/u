@@ -64,3 +64,18 @@ footer {
     font-size: 20px;
     text-shadow: 6px 0px 5px #d8e8f4;
 }
+.main-index {
+    margin: 50px 15%;
+    padding: 30px;
+    background-color: #d8e8f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.student-photo {
+    border-radius: 50%;
+}
+.main-index-student-info {
+    min-width: 33%;
+    text-align: center;
+}
