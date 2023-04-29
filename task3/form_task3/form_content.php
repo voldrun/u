@@ -64,5 +64,30 @@
     </div>
     <label for="comment">Дополнительная информация</label>
     <textarea name="comment" id="comment" class="w-100" cols="20" rows="10"></textarea>
-    <input type="submit" value="Отправить">
+    <button type="button" class="btn btn-primary mb-3 mt-3" id="confirm-btn">Отправить</button>
+    <div id="confirm-message">
+
+    </div>
 </form>
+<script>
+    function confirmMessage() {
+        const name = document.getElementById('name').value;
+        const surname = document.getElementById('surname').value;
+        const sel = document.getElementById('select-lesson');
+        const selectedLesson = sel.options[sel.selectedIndex].text;
+        const selectedTime = document.querySelector('input[name="time"]:checked').value;
+        const selectedControl = document.querySelector('input[name="control"]:checked').value;
+        const comment = document.getElementById("comment").value;
+
+        let resultStr = `Уважаемый ${name} ${surname}!<br>
+        Ждем вас на экзамен по ${selectedLesson} в ${selectedTime}.<br>
+        Экзамен пройдет в форме ${selectedControl}.<br>`;
+        if (comment != "") {
+            resultStr += `спасибо за комментарий: ${comment}.<br>`;
+        }
+        resultStr += '<button type="submit" class="btn btn-primary mb-3 mt-3">Подтвердить запись</button>';
+        document.getElementById('confirm-message').innerHTML = resultStr;
+    }
+    const confirmBtn = document.getElementById('confirm-btn');
+    confirmBtn.addEventListener('click', confirmMessage);
+</script>
